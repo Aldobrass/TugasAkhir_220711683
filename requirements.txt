@@ -6,4 +6,4 @@ imbalanced-learn
 nltk
 Sastrawi
 joblib
-skmultilearn
+scikit-multilearn
