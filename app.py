@@ -206,10 +206,8 @@ st.markdown('<div class="sub-title">Masukkan ulasan pengguna — model akan mend
 
 cols = st.columns(3)
 
-default_val = selected_example if selected_example else ""
 user_input = st.text_area(
     "Teks Ulasan",
-    value=default_val,
     height=110,
     placeholder="Contoh: aplikasinya bagus tapi ongkirnya mahal banget...",
     label_visibility="collapsed",
