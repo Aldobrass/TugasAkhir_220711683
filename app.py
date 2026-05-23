@@ -204,21 +204,7 @@ def predict(text: str):
 st.markdown('<div class="main-title">🛍️ Klasifikasi Ulasan Shopee</div>', unsafe_allow_html=True)
 st.markdown('<div class="sub-title">Masukkan ulasan pengguna — model akan mendeteksi aspek yang dibicarakan secara otomatis.</div>', unsafe_allow_html=True)
 
-CONTOH = [
-    "aplikasinya cepat dan mudah digunakan",
-    "harganya mahal banget dibanding toko lain",
-    "CS nya ramah dan cepat respons",
-    "aplikasi sering crash pas mau checkout",
-    "ongkirnya murah dan barang cepat sampai",
-    "pelayanan buruk, komplain tidak ditanggapi",
-]
-
-st.markdown("**Coba contoh ulasan:**")
 cols = st.columns(3)
-selected_example = None
-for idx, contoh in enumerate(CONTOH):
-    if cols[idx % 3].button(contoh, key=f"ex_{idx}", use_container_width=True):
-        selected_example = contoh
 
 default_val = selected_example if selected_example else ""
 user_input = st.text_area(
