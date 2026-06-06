@@ -7,3 +7,5 @@ nltk
 Sastrawi
 joblib
 scikit-multilearn
+openpyxl
+matplotlib
